@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
+    <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <!--      
+      You may substitute jQuery for the App Framework selector library.
+      See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+    -->
+    <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
+    <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+    <!--      
+      You may substitute jQuery for the App Framework selector library.
+      See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+    -->
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+    <script type="application/javascript" src="js/app.js"></script>
+    <script type="application/javascript" src="js/init-app.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+  </head>
+
+  <body id="afui">
+
+    <header class="wrapping-col wrap-element uib_w_12 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-1"><a class="button backButton">Back</a>
+      <h1>Action</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_17 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-2"><a class="button backButton">Back</a>
+      <h1>Drama</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_22 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-3"><a class="button backButton">Back</a>
+      <h1>Romance</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_27 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-4"><a class="button backButton">Back</a>
+      <h1>Comedy</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_32 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-5"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_38 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-6"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_44 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-7"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_50 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-0"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_56 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-8"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_63 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-9"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_69 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-10"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_75 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-11"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_81 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-12"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_87 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-13"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_93 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-14"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_99 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-15"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_108 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-16"><a class="button backButton">Back</a>
+      <h1>Horror</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_113 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-17"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_119 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-18"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_125 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-19"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_132 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-20"><a class="button backButton">Back</a>
+      <h1>Sci-Fi</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_137 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-21"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_143 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-22"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <header class="wrapping-col wrap-element uib_w_149 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-23"><a class="button backButton">Back</a>
+      <h1>Movie Info</h1>
+    </header>
+    <div class="uwrap" id="content">
+      <div class="upage panel front" id="mainpage" data-header="none" data-footer="none">
+        <div class="upage-outer">
+          <div class="upage-content ac0 content-area wrapping-col right" id="page_83_11"><a class="button widget uib_w_4 btn-default d-margins" data-uib="app_framework/button" data-ver="1">            Browse Genres</a>
+            <div class="widget uib_w_106 scale-image d-margins top" data-uib="media/img" data-ver="0">
+              <figure class="figure-align">
+                <img src="images/TopMovies.png">
+                <figcaption data-position="bottom"></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+            <div class="sidebar-content content-area vertical-col">
+
+              <div class="widget uib_w_11 d-margins all" data-uib="media/text" data-ver="0">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+              <ul class="list widget uib_w_5 d-margins" data-uib="app_framework/listview" data-ver="1">
+                <li class="widget uib_w_9" data-uib="app_framework/listitem" data-ver="1"><a href="#action">Action</a>
+                </li>
+                <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1"><a href="#drama">Drama</a>
+                </li>
+                <li class="widget uib_w_8" data-uib="app_framework/listitem" data-ver="1"><a href="#romance">Romance</a>
+                </li>
+                <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1"><a href="#comedy">Comedy</a>
+                </li>
+                <li class="widget uib_w_107" data-uib="app_framework/listitem" data-ver="1"><a href="#horror">Horror</a>
+                </li>
+                <li class="widget uib_w_131" data-uib="app_framework/listitem" data-ver="1"><a href="#scifi">Sci-Fi</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="upage vertical-col panel" id="action" data-header="af-header-1" data-footer="none">
+        <ul class="list widget uib_w_13 d-margins" data-uib="app_framework/listview" data-ver="1">
+          <li class="widget uib_w_14" data-uib="app_framework/listitem" data-ver="1"><a href="#captain">Captain America: The Winter Soldier</a>
+          </li>
+          <li class="widget uib_w_15" data-uib="app_framework/listitem" data-ver="1"><a href="#xmen">X-Men: Days of Future Past</a>
+          </li>
+          <li class="widget uib_w_16" data-uib="app_framework/listitem" data-ver="1"><a href="#guardians">Guardians of the Galaxy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="upage vertical-col left panel" id="drama" data-header="af-header-2" data-footer="none">
+        <ul class="list widget uib_w_18 d-margins" data-uib="app_framework/listview" data-ver="1">
+          <li class="widget uib_w_19" data-uib="app_framework/listitem" data-ver="1"><a href="#whiplash">Whiplash</a>
+          </li>
+          <li class="widget uib_w_20" data-uib="app_framework/listitem" data-ver="1"><a href="#imitation">The Imitation Game</a>
+          </li>
+          <li class="widget uib_w_21" data-uib="app_framework/listitem" data-ver="1"><a href="#gonegirl">Gone Girl</a>
+          </li>
+        </ul>
+      </div>
+      <div class="upage vertical-col panel" id="romance" data-header="af-header-3" data-footer="none">
+        <ul class="list widget uib_w_23 d-margins" data-uib="app_framework/listview" data-ver="1">
+          <li class="widget uib_w_24" data-uib="app_framework/listitem" data-ver="1"><a href="#endless">Endless Love</a>
+          </li>
+          <li class="widget uib_w_25" data-uib="app_framework/listitem" data-ver="1"><a href="#theory">The Theory of Everything</a>
+          </li>
+          <li class="widget uib_w_26" data-uib="app_framework/listitem" data-ver="1"><a href="#whatif">What If</a>
+          </li>
+        </ul>
+      </div>
+      <div class="upage vertical-col panel" id="comedy" data-header="af-header-4" data-footer="none">
+        <ul class="list widget uib_w_28 d-margins" data-uib="app_framework/listview" data-ver="1">
+          <li class="widget uib_w_29" data-uib="app_framework/listitem" data-ver="1"><a href="#interview">The Interview</a>
+          </li>
+          <li class="widget uib_w_30" data-uib="app_framework/listitem" data-ver="1"><a href="#jump">22 Jump Street</a>
+          </li>
+          <li class="widget uib_w_31" data-uib="app_framework/listitem" data-ver="1"><a href="#horrible">Horrible Bosses 2</a>
+          </li>
+        </ul>
+      </div>
+      <div class="upage vertical-col left panel" id="captain" data-header="af-header-5" data-footer="none">
+        <div class="widget uib_w_33 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/Cap.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_34 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_35 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>For Steve Rogers, awakening after decades of suspended animation involves more than catching up on pop culture; it also means that this old school idealist must face a world of subtler threats and difficult moral complexities. That becomes
+              clear when Director Nick Fury is killed by the mysterious assassin, the Winter Soldier, but not before warning Rogers that SHIELD has been subverted by its enemies. When Rogers acts on Fury's warning to trust no one there, he is branded
+              as a traitor by the organization. Now a fugitive, Captain America must get to the bottom of this deadly mystery with the help of the Black Widow and his new friend, The Falcon. However, the battle will be costly for the Sentinel of Liberty,
+              with Rogers finding enemies where he least expects them while learning that the Winter Soldier looks disturbingly familiar.</p>
+            <p>Written by Kenneth Chisholm (kchishol@rogers.com)</p>
+          </div>
+        </div>
+        <div class="widget uib_w_36 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_37 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/hvD6clUAWdA?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col panel" id="xmen" data-header="af-header-6" data-footer="none">
+        <div class="widget uib_w_39 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/xmen.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_40 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_41 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>In the future, the mutants and the humans that help them are slaughtered by powerful robots named Sentinels. Professor Xavier, Wolverine, Magneto, Storm, Kitty Pryde and her friends meet at a monastery in China and Xavier explains that the
+              invincible Sentinels were created using the DNA of Mystique that was captured in 1973 when she tried to assassinate their creator Dr. Bolivar Trask. Xavier tells that their only chance is return to 1973 using Pryde's ability to join Charles
+              Xavier and Erik Lehnsherr. However, only Wolverine can withstand the damages of the time travel. Will he succeed in stopping Mystique and the Sentinel Program and save the mutants and their human friends from annihilation?</p>
+            <p>Written by Claudio Carvalho, Rio de Janeiro, Brazil</p>
+          </div>
+        </div>
+        <div class="widget uib_w_42 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_43 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/pK2zYHWDZKo?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col panel" id="guardians" data-header="af-header-7" data-footer="none">
+        <div class="widget uib_w_45 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/guardians.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_46 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_47 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth, is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power,
+              Quill creates a team of space heroes known as the "Guardians of the Galaxy" to save the world.</p>
+            <p>Written by James Hake</p>
+          </div>
+        </div>
+        <div class="widget uib_w_48 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_49 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/89yh3vYs-zo?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="widget uib_w_51 scale-image d-margins" data-uib="media/img" data-ver="0">
+        <figure class="figure-align">
+          <img src="images/whiplash.png">
+          <figcaption data-position="bottom"></figcaption>
+        </figure>
+      </div>
+      <div class="upage vertical-col left panel" id="whiplash" data-header="af-header-0" data-footer="none">
+        <div class="widget uib_w_57 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/whiplash.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_52 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_53 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>A young and talented drummer attending a prestigious music academy finds himself under the wing of the most respected professor at the school, one who does not hold back on abuse towards his students. The two form an odd relationship as the
+              student wants to achieve greatness, and the professor pushes him.</p>
+            <p>Written by andrewhodkinson</p>
+          </div>
+        </div>
+        <div class="widget uib_w_54 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_55 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/7d_jQycdQGo?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col panel" id="imitation" data-header="af-header-8" data-footer="none">
+        <div class="widget uib_w_58 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/imitation.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_59 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_60 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley
+              Park, during the darkest days of World War II.</p>
+            <p>Written by Studio Canal</p>
+          </div>
+        </div>
+        <div class="widget uib_w_61 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_62 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/VHeUNxBvmMg?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="gonegirl" data-header="af-header-9" data-footer="none">
+        <div class="widget uib_w_64 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/gonegirl.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_65 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_66 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>On the occasion of his fifth wedding anniversary, Nick Dunne reports that his wife, Amy, has gone missing. Under pressure from the police and a growing media frenzy, Nick's portrait of a blissful union begins to crumble. Soon his lies, deceits
+              and strange behavior have everyone asking the same dark question: Did Nick Dunne kill his wife?</p>
+            <p>Written by Twentieth Century Fox</p>
+          </div>
+        </div>
+        <div class="widget uib_w_67 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_68 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/esGn-xKFZdU?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="endless" data-header="af-header-10" data-footer="none">
+        <div class="widget uib_w_70 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/endless.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_71 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_72 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>David has had a crush on Jade since the first time he saw her in the tenth grade. With high school coming to an end, David has never spoke to her until her family pulls up to The Inn, where David works as a valet. She and David fall madly
+              in love, a love that only grows stronger as parents try to tear them apart. David knows Jade's past, but as his secrets are slowly revealed Jade's trust is tested, and leaves them wondering if they are truly meant to be together.</p>
+          </div>
+        </div>
+        <div class="widget uib_w_73 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_74 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/TRXGch6675Q?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="theory" data-header="af-header-11" data-footer="none">
+        <div class="widget uib_w_76 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/theory.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_77 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_78 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>"The theory of everything" gives us a glimpse of Stephen Hawking's life. It describes his college days and his relationship with his wife Jane. It also portrays how his condition affected his relationship with Jane and how he rose above it
+              and wrote his book " A brief history of time " .</p>
+            <p>Written by Keith Francis</p>
+          </div>
+        </div>
+        <div class="widget uib_w_79 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_80 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/LUayjO_KgsQ?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="whatif" data-header="af-header-12" data-footer="none">
+        <div class="widget uib_w_82 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/whatif.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_83 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_84 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>WHAT IF is the story of medical school dropout Wallace, who's been repeatedly burned by bad relationships. So while everyone around him, including his roommate Allan seems to be finding the perfect partner, Wallace decides to put his love
+              life on hold. It is then that he meets Chantry an animator who lives with her longtime boyfriend Ben. Wallace and Chantry form an instant connection, striking up a close friendship. Still, there is no denying the chemistry between them,
+              leading the pair to wonder, what if the love of your life is actually your best friend?</p>
+            <p>Written by CBS Films</p>
+          </div>
+        </div>
+        <div class="widget uib_w_85 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_86 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/A86JGbBEaBk?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="interview" data-header="af-header-13" data-footer="none">
+        <div class="widget uib_w_88 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/interview.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_89 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_90 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>In the action-comedy The Interview, Dave Skylark (James Franco) and his producer Aaron Rapoport (Seth Rogen) run the popular celebrity tabloid TV show "Skylark Tonight." When they discover that North Korean dictator Kim Jong-un is a fan of
+              the show, they land an interview with him in an attempt to legitimize themselves as journalists. As Dave and Aaron prepare to travel to Pyongyang, their plans change when the CIA recruits them, perhaps the two least-qualified men imaginable,
+              to assassinate Kim Jong-un.</p>
+            <p>Written by Sony Pictures Entertainment</p>
+          </div>
+        </div>
+        <div class="widget uib_w_91 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_92 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/DkJA1rb8Nxo?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col panel" id="jump" data-header="af-header-14" data-footer="none">
+        <div class="widget uib_w_94 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/jump.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_95 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_96 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>After making their way through high school (twice), big changes are in store for officers Schmidt (Jonah Hill) and Jenko (Channing Tatum) when they go deep undercover at a local college. But when Jenko meets a kindred spirit on the football
+              team, and Schmidt infiltrates the bohemian art major scene, they begin to question their partnership. Now they don't have to just crack the case - they have to figure out if they can have a mature relationship. If these two overgrown adolescents
+              can grow from freshmen into real men, college might be the best thing that ever happened to them.</p>
+            <p>Written by Sony Pictures Entertainment</p>
+          </div>
+        </div>
+        <div class="widget uib_w_97 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_98 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/qgCrzUPqOFo?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="horrible" data-header="af-header-15" data-footer="none">
+        <div class="widget uib_w_100 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/horrible.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_101 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_102 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Fed up with answering to higher-ups, Nick, Dale and Kurt decide to become their own bosses by launching their own business. But a slick investor soon pulls the rug out from under them. Outplayed and desperate, and with no legal recourse, the
+              three would-be entrepreneurs hatch a misguided plan to kidnap the investor's adult son and ransom him to regain control of their company.</p>
+            <p>Written by SantaClaus</p>
+          </div>
+        </div>
+        <div class="widget uib_w_103 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_104 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/B45XU3v9sPw?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="horror" data-header="af-header-16" data-footer="none">
+        <ul class="list widget uib_w_109 d-margins" data-uib="app_framework/listview" data-ver="1">
+          <li class="widget uib_w_110" data-uib="app_framework/listitem" data-ver="1"><a href="#horns">Horns</a>
+          </li>
+          <li class="widget uib_w_111" data-uib="app_framework/listitem" data-ver="1"><a href="#above">As Above As Below</a>
+          </li>
+          <li class="widget uib_w_112" data-uib="app_framework/listitem" data-ver="1"><a href="#anna">Annabelle</a>
+          </li>
+        </ul>
+      </div>
+      <div class="upage vertical-col left panel" id="horns" data-header="af-header-17" data-footer="none">
+        <div class="widget uib_w_114 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/horns.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_115 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_116 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>After Iggy's long time girlfriend is murdered and the whole town agrees he is the killer, he awakens one morning with horns and the townspeople soon confess their sins. Once knowing the sins of the people, he is facing the true killer of his
+              beloved girlfriend.</p>
+          </div>
+        </div>
+        <div class="widget uib_w_117 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_118 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/yg9GW3Krsi8?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col panel" id="above" data-header="af-header-18" data-footer="none">
+        <div class="widget uib_w_120 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/above.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_121 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_122 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Miles of twisting catacombs lie beneath the streets of Paris, the eternal home to countless souls. When a team of explorers ventures into the uncharted maze of bones, they uncover the dark secret that lies within this city of the dead. A journey
+              into madness and terror, As Above, So Below reaches deep into the human psyche to reveal the personal demons that come back to haunt us all. Written by John Erick Dowdle and Drew Dowdle (Quarantine, Devil) and directed by John Erick Dowdle,
+              the psychological thriller is produced by Thomas Tull, Jon Jashni, Drew Dowdle and Patrick Aiello. Alex Hedlund serves as the executive producer.</p>
+            <p>Written by Universal Pictures</p>
+          </div>
+        </div>
+        <div class="widget uib_w_123 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_124 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/uiTPqZkTTN8?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col panel" id="anna" data-header="af-header-19" data-footer="none">
+        <div class="widget uib_w_126 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/anna.png">
+
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_127 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_128 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>John Form has found the perfect gift for his expectant wife, Mia - a beautiful, rare vintage doll in a pure white wedding dress. But Mia's delight with Annabelle doesn't last long. On one horrific night, their home is invaded by members of
+              a satanic cult, who violently attack the couple. Spilled blood and terror are not all they leave behind. The cultists have conjured an entity so malevolent that nothing they did will compare to the sinister conduit to the damned that is
+              now... Annabelle..</p>
+            <p>Written by johntyler249</p>
+          </div>
+        </div>
+        <div class="widget uib_w_129 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_130 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/jdUysoK6tdQ?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="scifi" data-header="af-header-20" data-footer="none">
+        <ul class="list widget uib_w_133 d-margins" data-uib="app_framework/listview" data-ver="1">
+          <li class="widget uib_w_134" data-uib="app_framework/listitem" data-ver="1"><a href="#interstellar">Interstellar</a>
+          </li>
+          <li class="widget uib_w_135" data-uib="app_framework/listitem" data-ver="1"><a href="#lucy">Lucy</a>
+          </li>
+          <li class="widget uib_w_136" data-uib="app_framework/listitem" data-ver="1"><a href="#maze">Maze Runner</a>
+          </li>
+        </ul>
+      </div>
+      <div class="upage vertical-col panel" id="interstellar" data-header="af-header-21" data-footer="none">
+        <div class="widget uib_w_138 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/inters.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_139 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_140 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>In the near future, Earth has been devastated by drought and famine, causing a scarcity in food and extreme changes in climate. When humanity is facing extinction, a mysterious rip in the space-time continuum is discovered, giving mankind
+              the opportunity to widen its lifespan. A group of explorers must travel beyond our solar system in search of a planet that can sustain life. The crew of the Endurance are required to think bigger and go further than any human in history
+              as they embark on an interstellar voyage into the unknown. Coop, the pilot of the Endurance, must decide between seeing his children again and the future of the human race.</p>
+            <p>Written by Warren D'Souza</p>
+          </div>
+        </div>
+        <div class="widget uib_w_141 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_142 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/Lm8p5rlrSkY?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="lucy" data-header="af-header-22" data-footer="none">
+        <div class="widget uib_w_144 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/lucy.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_145 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_146 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>It was supposed to be a simple job. All Lucy had to do was deliver a mysterious briefcase to Mr. Jang. But immediately Lucy is caught up in a nightmarish deal where she is captured and turned into a drug mule for a new and powerful synthetic
+              drug. When the bag she is carrying inside of her stomach leaks, Lucy's body undergoes unimaginable changes that begins to unlock her mind's full potential. With her new-found powers, Lucy turns into a merciless warrior intent on getting
+              back at her captors. She receives invaluable help from Professor Norman, the leading authority on the human mind, and French police captain Pierre Del Rio.</p>
+            <p>Written by LeiaSolo</p>
+          </div>
+        </div>
+        <div class="widget uib_w_147 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_148 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/MVt32qoyhi0?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+      <div class="upage vertical-col left panel" id="maze" data-header="af-header-23" data-footer="none">
+        <div class="widget uib_w_150 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+            <img src="images/maze.png">
+            <figcaption data-position="bottom"></figcaption>
+          </figure>
+        </div>
+        <div class="widget uib_w_151 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Storyline</p>
+          </div>
+        </div>
+        <div class="widget uib_w_152 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Thomas wakes up in an elevator, remembering nothing but his own name. He emerges into a world of about 60 teen boys who have learned to survive in a completely enclosed environment, subsisting on their own agriculture and supplies. A new boy
+              arrives every 30 days. The original group has been in "The Glade" for three years, trying to find a way to escape through the Maze that surrounds their living space. They have begun to give up hope. Then a comatose girl arrives with a strange
+              note, and their world begins to change. There are some great, fast-paced action scenes, particularly those involving the nightmarish Grievers who plague the boys.</p>
+            <p>Written by KelseyJ</p>
+          </div>
+        </div>
+        <div class="widget uib_w_153 d-margins all" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+            <p>Watch Trailer</p>
+          </div>
+        </div>
+        <div class="embed-video widget uib_w_154 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/64-iSYVmMVY?wmode=transparent">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

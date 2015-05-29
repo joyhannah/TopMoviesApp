@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+    <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+    <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="js/app.js"></script>
+    <script type="application/javascript" src="js/init-app.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="upage" id="mainpage">
+      <div class="upage-outer">
+        <div class="uib-header header-bg container-group inner-element uib_w_1" data-uib="layout/header" data-ver="0" id="af-header-0">
+          <h2>Title</h2>
+          <div class="widget-container wrapping-col single-centered"></div>
+          <div class="widget-container content-area horiz-area wrapping-col left">
+            <button class="btn widget uib_w_4 btn-default d-margins" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon folder button-icon-left" data-position="left"></i>
+            </button>
+          </div>
+          <div class="widget-container content-area horiz-area wrapping-col right"></div>
+        </div>
+        <div class="upage-content ac0 content-area vertical-col left">
+          <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+            <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+              <div class="widget-container content-area vertical-col left">
+
+                <div class="widget uib_w_3 d-margins" data-uib="media/text" data-ver="0">
+                  <div class="widget-container left-receptacle"></div>
+                  <div class="widget-container right-receptacle"></div>
+                  <div>
+                    <p>This is the view for the first menu item.</p>
+                  </div>
+                </div><span class="uib_shim"></span>
+              </div>
+            </div>
+            <span class="uib_shim"></span>
+          </div>
+        </div>
+        <div class="inner-element uib_w_2 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+          <div class="sidebar-content content-area vertical-col">
+
+            <div class="list-group widget uib_w_5 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1">
+              <a class="list-group-item allow-badge widget uib_w_6 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                <h4 class="list-group-item-heading">Heading</h4>
+                <p class="list-group-item-text">Home</p>
+              </a>
+              <a class="list-group-item allow-badge widget uib_w_9 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                <h4 class="list-group-item-heading">Heading</h4>
+                <p class="list-group-item-text">Favorites</p>
+              </a>
+              <a class="list-group-item allow-badge widget uib_w_7 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                <h4 class="list-group-item-heading">Heading</h4>
+                <p class="list-group-item-text">Messages</p>
+              </a>
+              <a class="list-group-item allow-badge widget uib_w_8 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                <h4 class="list-group-item-heading">Heading</h4>
+                <p class="list-group-item-text">Profile</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
